@@ -1,6 +1,8 @@
 An Xtext Language Built with Maven
 ==================================
 
+I added a post processing dependency to run with Maven. See my.mavenized.postprocessing for details.
+
 A small example to show how to configure a Maven build for an Xtext language. It includes:
 
 Language Example (my.mavenized.herolanguage)
