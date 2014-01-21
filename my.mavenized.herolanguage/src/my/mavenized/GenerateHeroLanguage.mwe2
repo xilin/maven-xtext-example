@@ -3,6 +3,7 @@ module my.mavenized.GenerateHeroLanguage
 import org.eclipse.emf.mwe.utils.*
 import org.eclipse.xtext.generator.*
 import org.eclipse.xtext.ui.generator.*
+import my.mavenized.postprocessing.ExtendedGenerator
 
 var fileExtensions = "hero"
 var projectName = "my.mavenized.herolanguage"
@@ -51,7 +52,7 @@ Workflow {
     	directory = "${runtimeProject}.tests/src-gen"
     }
     
-    component = Generator {
+    component = ExtendedGenerator {
     	pathRtProject = runtimeProject
     	pathUiProject = "${runtimeProject}.ui"
     	pathTestProject = "${runtimeProject}.tests"
